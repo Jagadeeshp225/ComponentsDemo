@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+firstname:{{details.Firstname}}<br>
+age:{{details.Age}}<br>
+Course:{{details.course}}
+Fname:<input type="text" [(ngModel)]="details.Firstname"><br>
+age:<input type="text" [(ngModel)]="details.Age"><br>
+Course:
+<select [(ngModel)]="details.course">
+  <option>EEE</option>
+  <option>MECH</option>
+  <option>IT</option>
+</select>
+<input type="button" value="Change Data"(click)="Change()">
+<app-parent></app-parent>
